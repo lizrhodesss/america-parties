@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+const holidayMenu = document.getElementById('menu-of-holidays')
+const holidayList = document.getElementById('holiday-list')
+
+
+
+
+
+
 //fetch
 
 //render Function
@@ -5,5 +23,8 @@
         //create span tags
         // set innerText to holiday name
         //append
+//click event listener for like button
 
-    //click event listener
+//submit listner for comments
+
+//mouse in&out event for new years, and chirstmas
