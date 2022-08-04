@@ -19,7 +19,7 @@ function renderHolidays(holidays) {
       }
     )
 }
-// document.querySelector('#holidays-list').addEventListener('mouseover', window.alert ("Happy " + holiday.name))
+
 function displayHoliday(holidays) {
     const displayName = document.querySelector('#holiday-name')
     displayName.textContent = holidays.name
@@ -41,7 +41,4 @@ let form = document.querySelector('#holiday-form');
         commentHere.innerText=newComment
         commentList.append(commentHere)
         form.reset()
-    }
-
-
-    )
+    })

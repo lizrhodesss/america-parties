@@ -3,10 +3,10 @@
 body {
     cursor: pointer;
     background-image: url("https://petguidereviews.com/wp-content/uploads/2022/03/unique-patriotic-dog-names.jpg");
-    background-color: #cccccc;
+    background-color: #CCCCCC;
     background-size: cover;
-    /* background-repeat: repeat; */
-    
+    height: 1000px;
+    background-repeat: no-repeat;
 }
 h2 {
     top: 25px
@@ -16,17 +16,6 @@ html, body {
     padding: 0;
     font-family: 'Questrial', sans-serif;
 }
-
-header {
-    background-color: #414141;
-    padding: 20px;
-}
-
-/* header img {
-    height: 50px;
-    width: auto;
-} */
-
 #menu {
     width:25%;
     height: 100%;
@@ -34,67 +23,30 @@ header {
     margin-top: 20px;
     display:block;
 }
-
 #menu h2 {
     font-size: 4em;
 }
-
 #container {
     display:flex;
     height:100%;
-    /* position: relative;
-    top: 100px; */
-
 }
-
-/* #holiday span {
-    padding: 0;
-    margin: 0;
-    font-size: 1.5rem;
-} */
-
-/* #holiday span:not(:last-child) { 
-    margin-bottom: .5em;  
-} */
-
-#holiday span {
-    position: relative;
-    top: 500px;
-    /* float: left;
-    clear: left; */
+#holiday {
+    position: absolute;
+    top: 100px;
+    right: 80px
 }
-
-#holiday span:hover {
-    color: red;
-    cursor: pointer;
-}
-
-/* #dish {
-    position: relative;
-    margin-top: 20px;
-} */
-
 #holiday-text {
     position: relative;
     top:50 px;
     left: 800 px;
-    /* margin-left: 20px;
-    margin-top: 20px;
-    padding: 20px;
-    width:40%; */
-    /* height:auto;
-    background-color: rgba(255, 255, 255, 0.75); */
 }
-
 #holiday-name {
     text-transform: uppercase;
     font-size: 1.5em;
 }
-
 #holiday-description {
     font-size: 1.25em;
 }
-
 input[type=submit] {
     border:0px;
     background:white;
@@ -103,7 +55,6 @@ input[type=submit] {
     margin-left: 10px;
     border-radius: 10px;
 }
-
 input[type=text] {
     width: 150px;
     font-size: 1em;
@@ -111,13 +62,6 @@ input[type=text] {
     border-radius: 10px;
     padding:10px;
 }
-/* 
-.icon {
-    width:2em;
-    height:auto;
-    vertical-align: middle;
-} */
-
 form {
     display:flex;
     height: 30px;
