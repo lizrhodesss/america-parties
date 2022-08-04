@@ -7,14 +7,19 @@ fetch ('https://date.nager.at/api/v3/publicholidays/2022/US')
  })
 
 function renderHolidays(holidays) {
+    holidays.splice(3, 2)
+    holidays.splice(9, 1)
     holidays.forEach (holiday => {
         const holidayName = document.querySelector('#holidays-list')
         const holidayContainer = document.createElement("p")
         holidayContainer.innerText = holiday.name
         holidayName.append(holidayContainer)
-        holidayContainer.addEventListener('click', () => displayHoliday(holiday))}
+        holidayContainer.addEventListener('click', () => displayHoliday(holiday))
+        holidayContainer.addEventListener('mouseover', () => window.alert ("Happy " + holiday.name))
+      }
     )
 }
+// document.querySelector('#holidays-list').addEventListener('mouseover', window.alert ("Happy " + holiday.name))
 function displayHoliday(holidays) {
     const displayName = document.querySelector('#holiday-name')
     displayName.textContent = holidays.name
@@ -24,6 +29,7 @@ function displayHoliday(holidays) {
     displayFixed.textContent = holidays.fixed
     const displayGlobal = document.querySelector('#global')
     displayGlobal.textContent = holidays.global
+    
 }
 
 let form = document.querySelector('#holiday-form');
@@ -33,9 +39,9 @@ let form = document.querySelector('#holiday-form');
         const commentHere = document.createElement("li")
         newComment = document.querySelector("#holiday-comment").value
         commentHere.innerText=newComment
-        console.log(commentHere)
         commentList.append(commentHere)
         form.reset()
-        
-}
-)
+    }
+
+
+    )
