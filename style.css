@@ -1,3 +1,16 @@
+
+
+body {
+    cursor: pointer;
+    background-image: url("https://petguidereviews.com/wp-content/uploads/2022/03/unique-patriotic-dog-names.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    /* background-repeat: repeat; */
+    
+}
+h2 {
+    top: 25px
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -34,19 +47,21 @@ header {
 
 }
 
-#holiday span {
+/* #holiday span {
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
-}
+} */
 
-#holiday span:not(:last-child) { 
+/* #holiday span:not(:last-child) { 
     margin-bottom: .5em;  
-}
+} */
 
 #holiday span {
-    float: left;
-    clear: left;
+    position: relative;
+    top: 500px;
+    /* float: left;
+    clear: left; */
 }
 
 #holiday span:hover {
@@ -54,20 +69,21 @@ header {
     cursor: pointer;
 }
 
-#dish {
+/* #dish {
     position: relative;
     margin-top: 20px;
-}
+} */
 
-#dish-text {
-    position: absolute;
-    top:0px;
-    margin-left: 20px;
+#holiday-text {
+    position: relative;
+    top:50 px;
+    left: 800 px;
+    /* margin-left: 20px;
     margin-top: 20px;
     padding: 20px;
-    width:40%;
-    height:auto;
-    background-color: rgba(255, 255, 255, 0.75);
+    width:40%; */
+    /* height:auto;
+    background-color: rgba(255, 255, 255, 0.75); */
 }
 
 #holiday-name {
