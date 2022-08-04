@@ -26,9 +26,9 @@ function displayHoliday(holidays) {
     const displayDate = document.querySelector('#holiday-launch-year')
     displayDate.textContent = holidays.displayDate
     const displayFixed = document.querySelector('#holiday-fixed')
-    displayFixed.textContent = holidays.fixed
+    displayFixed.textContent ="Is this holiday on a fixed date? " + holidays.fixed
     const displayGlobal = document.querySelector('#global')
-    displayGlobal.textContent = holidays.global
+    displayGlobal.textContent = "Is this a global holiday? " + holidays.global
     
 }
 
